@@ -1,7 +1,7 @@
 package org.tmt.csw.location
 
 object Hello extends Greeting with App {
-  1 + 1
+
   println("")
 }
 

@@ -2,8 +2,18 @@ language: scala
 scala: 2.12.1
 jdk: oraclejdk8
 
+branches:
+  only:
+    - master
+
+notifications:
+    email:
+      recipients:
+        - kpritam@thoughtworks.com
+
+install:
+  - sbt ++$TRAVIS_SCALA_VERSION compile test scalastyle
+
 script:
-  - ./sbt "++$SCALA_VERSION" compile
-  - ./sbt "++$SCALA_VERSION" test
-  - ./sbt "++$SCALA_VERSION" package
+  - sbt ++$TRAVIS_SCALA_VERSION package
 
