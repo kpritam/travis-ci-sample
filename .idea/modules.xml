@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/csw-location.iml" filepath="$PROJECT_DIR$/.idea/modules/csw-location.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/csw-location-build.iml" filepath="$PROJECT_DIR$/.idea/modules/csw-location-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/travis-ci-sample.iml" filepath="$PROJECT_DIR$/.idea/modules/travis-ci-sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/travis-ci-sample-build.iml" filepath="$PROJECT_DIR$/.idea/modules/travis-ci-sample-build.iml" />
+    </modules>
+  </component>
+</project>
