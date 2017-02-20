@@ -1,11 +1,14 @@
 {
   "package": {
-    "name": "travis-ci-sample",
-    "repo": "maven",
-    "subject": "Checking Bintray",
+    "name": "tw-maven-central",
+    "repo": "tw",
+    "subject": "kpritam",
+    "desc": "This is a private maven repo.",
+    "website_url": "http://www.thoughtworks.com",
+    "issue_tracker_url": "https://github.com/kpritam/travis-ci-sample/issues",
     "vcs_url": "https://github.com/kpritam/travis-ci-sample.git",
     "github_use_tag_release_notes": true,
-    "licenses": ["MIT"],
+    "licenses": ["Unlicense"],
     "public_download_numbers": false,
     "public_stats": false
   },
