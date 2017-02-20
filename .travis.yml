@@ -32,7 +32,8 @@ script:
 after_success:
   provider: bintray
   file: "bintray.json"
-  dry-run: "false"
+  user: $BINTRAY_USER
+  key: $BINTRAY_KEY
   on:
     all_branches: true
 
