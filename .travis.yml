@@ -28,17 +28,9 @@ install:
 script:
 - sbt ++$TRAVIS_SCALA_VERSION package
 
-#after_success:
-#  provider: bintray
-#  file: "bintray.json"
-#  user: $BINTRAY_USER
-#  key: $BINTRAY_KEY
-#  on:
-#    all_branches: true
-
 deploy:
     provider: bintray
     skip_cleanup: true
     file: bintray.json
-    user: kpritam
-    key: $BINTRAY_API_KEY
+    user: $BINTRAY_USER
+    key: $BINTRAY_KEY
