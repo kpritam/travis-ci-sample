@@ -21,7 +21,7 @@
 
   "files":
   [
-    {"includePattern": "csw-location/target/scala-2.12/(.*\\.jar))", "excludePattern": ".*/do-not-deploy/.*", "uploadPattern": ".0.1-SNAPSHOT/$1"}
+    {"includePattern": "csw-location/target/scala-2.12/(.*\\.jar)", "excludePattern": ".*/do-not-deploy/.*", "uploadPattern": ".0.1-SNAPSHOT/$1"}
   ],
 
   "publish": true
