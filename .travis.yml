@@ -1,0 +1,9 @@
+language: scala
+scala: 2.12.1
+jdk: oraclejdk8
+
+script:
+  - ./sbt "++$SCALA_VERSION" compile
+  - ./sbt "++$SCALA_VERSION" test
+  - ./sbt "++$SCALA_VERSION" package
+
