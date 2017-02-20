@@ -1,31 +1,37 @@
 language: scala
+
 scala: 2.12.1
+
 jdk: oraclejdk8
 
+
+env:
+  global:
+  - secure: sgw7coO+8WgBtRUWY4MhYOnu90NlDnNH3H+sm/WtQ/CDUBpQ35RwKI5bCkT6wmDzvMeCmS0AqYIGZ3rpus/FMumeEWpsXJDq8mNe0k1BEwyc3saUlxx+mOAYUTVee5iaSLyCe6AIKpqJ16o0jza02aEUa88c1Z+ITEG7Gx+ko82qsR8hk1sTAIQLikap8NVZdJwsR5VEkSQ/rO5U0nHUayj+UEqBAkzI0j6HPfvG0OaQDUFfqlqs7Czyq5irx5MskgPeNw96rlYJli1ZmJFsDyKlAEYCtFv5jezvMOYDLgbEiVLAZ/TOyksGbve/mTPAEb+Yl04engzbEWRvn3ADc4aI43TBvO0W+ru/6mndeHgo+8qtL+g31I4DMwZWVcw0W7LyLBFOIWJT1bOILZRLUpvRQ/dXcEIkPyzk1nIfkiCmmIVYM2RCmkEtEWv9qYNFMEk6SqdmDsepfKfTLxBWoBGd2zFIhuY6iw+Pby/p34kLpBpnU7jRWMl9b98ro2lMkxIi3uzIdUpmEDCDLUp4PySAM5CzxSF+06d4jzNiN6ij11mw3g2bEJsAuf3BoTzq8fwxIXp2QeUe6sHbVY1vzbZ8VfqNtMcpyigixZA6SIO0ctr/IkgpKx9VDrHqtjTeVbYG13dgCtfRm9qGDMOVw8s8EnzBTAMm+3rl4XX6NA8=
+  - secure: tifzbISXNh5ExXtMzHchWb+a0Ui5zfctxE5QlwyjDop+AzZh/6BHSxVvoOV6jAUR7dLC7pl69v/vWfg2DEkezbcXUb//mqpI6Bqm3hcMI+xeBZvYi79MNAfkZPqZwhR4icMV47dXE8O2CnMRYeTz4u3nVSb28TuiUJInW8BAAwLP+6xS2Mu4iTfEjX5OtvhMI3fgubaE8vHLYlGcJGbve/mIkBaC4juZym6WZlNi/+nf2daF03Ul4QOqAXJ+urBdNUKOdWPm8BEQa4eSvPnhTnZVpcUasnLDbHfuCfawMjid0j8hbabpI61HXVoLwsGOUbm2UiBpNAX0PWqVGgEiUOQgXnQh/x29DZ54RhYgrp+AZWjbSORzyeAroGmcyTaMALZ/f3Bedy5vq2DwGDG5aVcUFvYEmCvFeB0veGiq1rPzpVX0Gka+CXIkjxii8aoN2UhY1SqFBr3KsnGwRGc2z37zL1W5h0iQqrHC30KQpiNUAxHqylhFPSVbFHaltpOeToiUlqb/AfrMLDwq0LMvFyHM8nth1A9iuXxphAVgC46CeusFNbo/vS1GMPMzsrvBocmYoVjDF8N+qo/mR2pmbZDZy5knau+yutWCMI3eFQmAJlUHlkLGyF3d8YaEe9c5hzQ6H1BjgvNRVfa7MIbjdxP/nDt4yFI0xD710C6BTW8=
+
 notifications:
-    email:
-      recipients:
-        - kpritam@thoughtworks.com
-      on_success: never
-      on_failure: always
+  email:
+    recipients:
+    - kpritam@thoughtworks.com
+    on_success: never
+    on_failure: always
 
 cache:
   directories:
-    - $HOME/.m2/repository
-    - $HOME/.sbt
-    - $HOME/.ivy2
+  - "$HOME/.m2/repository"
+  - "$HOME/.sbt"
+  - "$HOME/.ivy2"
 
 install:
-  - sbt ++$TRAVIS_SCALA_VERSION clean compile test scalastyle
+- sbt ++$TRAVIS_SCALA_VERSION clean compile test scalastyle
 
 script:
-  - sbt ++$TRAVIS_SCALA_VERSION package
+- sbt ++$TRAVIS_SCALA_VERSION package
 
 deploy:
   provider: bintray
   file: "bintray.json"
-  user: "kpritam"
-  secure: "pwgQIvlOvb5jjk6ymAVDZRYHLIf6QD5Jhbcz6lMTvKilC6wsVzNVIldCu4+Djrp650HildJj+pY5eVlymEolJ6hp/2mrtpGqesgQ/n35ieytfYVaeRZgH1alA0GatBgqi3q6fIcXWX6CxTi4CjLhePRa3EWedzZbZ89sTqzrxfrj/EUq5+IAKzO2yhSaxELdbEPd4ud0EsfxKdlJKSt2ypJ764OHC6mH6GUvYQRzOwep7cLEpMCd1cM3/6fjskgQcKO9PuBQ8XeiXgah31tbTeqfCLsXyYJMqk7aHT4GUgXz5aBKydehOGJ+SRKj2wYJhiOFOb11S4Gt889fU9ss2qw16AsDJpVa7aEzRFCzZLGyrVjC+QI7JxuOZA27m0ZCdW6YjGCNbmnMWqLLzlx1Uh7EPxAl0EYHAT7GQkpmHqmKgMUppaj4HzwtYkwyUEa7GCOX9EBzlE37P32wRNawYyfR+6BkOujJlxClDDdKGvKKfKjLIBRrFaxUcOLt0yZaNVzBegIWjGQKnYFXR4aYq4841M/32sz15sDCxVpeTY8VRpSh3q2OZK51ghr9KC6oWG3CnLH7ugIqtYnYcp6ufdQVglCLzxhN4iPMyLqF1TaZlDZ62Kbn1rh7YK+5JzEcepfLLOTsi7YBdoH1f+XaNRiI/12mYSluVI9kADaXdGs="
   dry-run: "false"
   on:
     all_branches: true
