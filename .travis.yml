@@ -10,10 +10,41 @@ notifications:
     email:
       recipients:
         - kpritam@thoughtworks.com
+      on_success: never
+      on_failure: always
+
+cache:
+  directories:
+    - $HOME/.m2/repository
+    - $HOME/.sbt
+    - $HOME/.ivy2
+
+#services:
+#  - redis-server
 
 install:
-  - sbt ++$TRAVIS_SCALA_VERSION compile test scalastyle
+  - sbt ++$TRAVIS_SCALA_VERSION clean compile test scalastyle
 
 script:
   - sbt ++$TRAVIS_SCALA_VERSION package
 
+#env:
+#  global:
+#  - secure: glhEB9krKsLbmcoQ5l6uDPGX+WWYThNwK24eUFkqutnum2avk98Z3e5sXtldDR386E1GSaDZYzWE8rv0AF9Xdqz4MvnZ/ZK11DtUfvWt9Vrd/NhsV081Mks3iJsyq9rqxk0byazUCuosuCnRTr4jzSE5LrGp2w7Fe1C/yKETYTc=
+#  - secure: LSz3qTRwykG5moCbWZoDH0eDu4EKEg89N3imxdGJfSrsX/iFpVKtFWfhk78vqBnJYj34H8jfNsm7v4ar8r4QFAXUGVrwAIBDcHuTDVphYBqwLdeImINb9gmUefOwg8z3aFqjkrnxts3U01K4Iuk1R5V6zTsBv5bXIp55/squ1oA=
+#
+#after_success:
+#  - >
+#      test "${TRAVIS_PULL_REQUEST}" = 'false' &&
+#      test "${TRAVIS_JDK_VERSION}" = 'oraclejdk8' &&
+#      sh "$TRAVIS_BUILD_DIR/.travis.credentials.sh" &&
+#      sbt 'set version := version.value + "." + System.getenv("TRAVIS_BUILD_NUMBER")' publish
+
+
+deploy:
+  provider: bintray
+  file: "bintray.json"
+  user: "kpritam"
+  secure: "pwgQIvlOvb5jjk6ymAVDZRYHLIf6QD5Jhbcz6lMTvKilC6wsVzNVIldCu4+Djrp650HildJj+pY5eVlymEolJ6hp/2mrtpGqesgQ/n35ieytfYVaeRZgH1alA0GatBgqi3q6fIcXWX6CxTi4CjLhePRa3EWedzZbZ89sTqzrxfrj/EUq5+IAKzO2yhSaxELdbEPd4ud0EsfxKdlJKSt2ypJ764OHC6mH6GUvYQRzOwep7cLEpMCd1cM3/6fjskgQcKO9PuBQ8XeiXgah31tbTeqfCLsXyYJMqk7aHT4GUgXz5aBKydehOGJ+SRKj2wYJhiOFOb11S4Gt889fU9ss2qw16AsDJpVa7aEzRFCzZLGyrVjC+QI7JxuOZA27m0ZCdW6YjGCNbmnMWqLLzlx1Uh7EPxAl0EYHAT7GQkpmHqmKgMUppaj4HzwtYkwyUEa7GCOX9EBzlE37P32wRNawYyfR+6BkOujJlxClDDdKGvKKfKjLIBRrFaxUcOLt0yZaNVzBegIWjGQKnYFXR4aYq4841M/32sz15sDCxVpeTY8VRpSh3q2OZK51ghr9KC6oWG3CnLH7ugIqtYnYcp6ufdQVglCLzxhN4iPMyLqF1TaZlDZ62Kbn1rh7YK+5JzEcepfLLOTsi7YBdoH1f+XaNRiI/12mYSluVI9kADaXdGs="
+#  passphrase: "Optional. In case a passphrase is configured on Bintray and GPG signing is used"
+  dry-run: "false"

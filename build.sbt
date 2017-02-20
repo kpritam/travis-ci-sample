@@ -6,3 +6,8 @@ lazy val `csw-location` = project
   .settings(
     libraryDependencies += scalatest % Test
   )
+
+
+resolvers += Resolver.jcenterRepo
+
+resolvers += Resolver.bintrayRepo("otherUser", "otherRepo")
