@@ -4,7 +4,6 @@ scala: 2.12.1
 
 jdk: oraclejdk8
 
-
 env:
   global:
   - secure: sgw7coO+8WgBtRUWY4MhYOnu90NlDnNH3H+sm/WtQ/CDUBpQ35RwKI5bCkT6wmDzvMeCmS0AqYIGZ3rpus/FMumeEWpsXJDq8mNe0k1BEwyc3saUlxx+mOAYUTVee5iaSLyCe6AIKpqJ16o0jza02aEUa88c1Z+ITEG7Gx+ko82qsR8hk1sTAIQLikap8NVZdJwsR5VEkSQ/rO5U0nHUayj+UEqBAkzI0j6HPfvG0OaQDUFfqlqs7Czyq5irx5MskgPeNw96rlYJli1ZmJFsDyKlAEYCtFv5jezvMOYDLgbEiVLAZ/TOyksGbve/mTPAEb+Yl04engzbEWRvn3ADc4aI43TBvO0W+ru/6mndeHgo+8qtL+g31I4DMwZWVcw0W7LyLBFOIWJT1bOILZRLUpvRQ/dXcEIkPyzk1nIfkiCmmIVYM2RCmkEtEWv9qYNFMEk6SqdmDsepfKfTLxBWoBGd2zFIhuY6iw+Pby/p34kLpBpnU7jRWMl9b98ro2lMkxIi3uzIdUpmEDCDLUp4PySAM5CzxSF+06d4jzNiN6ij11mw3g2bEJsAuf3BoTzq8fwxIXp2QeUe6sHbVY1vzbZ8VfqNtMcpyigixZA6SIO0ctr/IkgpKx9VDrHqtjTeVbYG13dgCtfRm9qGDMOVw8s8EnzBTAMm+3rl4XX6NA8=
@@ -37,10 +36,9 @@ after_success:
   on:
     all_branches: true
 
-
-deploy:
-    provider: bintray
-    skip_cleanup: true
-    file: bintray.json
-    user: kpritam
-    key: $BINTRAY_API_KEY
+#deploy:
+#    provider: bintray
+#    skip_cleanup: true
+#    file: bintray.json
+#    user: kpritam
+#    key: $BINTRAY_API_KEY
