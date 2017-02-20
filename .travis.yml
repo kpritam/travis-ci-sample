@@ -8,12 +8,12 @@ notifications:
         - kpritam@thoughtworks.com
       on_success: never
       on_failure: always
-#
-#cache:
-#  directories:
-#    - $HOME/.m2/repository
-#    - $HOME/.sbt
-#    - $HOME/.ivy2
+
+cache:
+  directories:
+    - $HOME/.m2/repository
+    - $HOME/.sbt
+    - $HOME/.ivy2
 
 install:
   - sbt ++$TRAVIS_SCALA_VERSION clean compile test scalastyle
