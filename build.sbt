@@ -7,3 +7,6 @@ lazy val `csw-location` = project
   .settings(
     libraryDependencies += scalatest % Test
   )
+
+
+libraryDependencies += "org.tmt.csw" % "csw_services" % revision

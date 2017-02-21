@@ -2,7 +2,7 @@
   "package": {
     "name": "org.tmt.csw",
     "repo": "csw_services",
-    "subject": "kpritam",
+    "subject": "tmt",
     "desc": "This is a private maven repo.",
     "website_url": "https://api.bintray.com/maven/",
     "issue_tracker_url": "https://github.com/kpritam/travis-ci-sample/issues",
