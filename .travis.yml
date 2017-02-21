@@ -23,7 +23,7 @@ cache:
   - "$HOME/.sbt"
   - "$HOME/.ivy2"
 
-publishMavenStyle : true
+publishMavenStyle : false
 
 install:
 - sbt ++$TRAVIS_SCALA_VERSION clean scalastyle compile test
