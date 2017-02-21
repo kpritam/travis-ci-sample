@@ -1,8 +1,8 @@
 {
   "package": {
-    "name": "tw-maven-central",
-    "repo": "tw",
-    "subject": "tw-tmt",
+    "name": "org.tmt.csw",
+    "repo": "csw_services",
+    "subject": "kpritam",
     "desc": "This is a private maven repo.",
     "website_url": "https://api.bintray.com/maven/",
     "issue_tracker_url": "https://github.com/kpritam/travis-ci-sample/issues",
@@ -21,7 +21,7 @@
 
   "files":
   [
-    {"includePattern": "csw-location/target/scala-2.12/(.*\\.jar)", "excludePattern": ".*/do-not-deploy/.*", "uploadPattern": ".3.0-SNAPSHOT/$1"}
+    {"includePattern": "csw-location/target/scala-2.12/(.*\\.jar)", "excludePattern": ".*/do-not-deploy/.*", "uploadPattern": ".1.0-SNAPSHOT/$1"}
   ],
 
   "publish": true
