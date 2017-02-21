@@ -13,6 +13,7 @@ notifications:
   email:
     recipients:
     - kpritam@thoughtworks.com
+    - uvjoshi@thoughtworks.com
     on_success: never
     on_failure: always
 
@@ -23,7 +24,7 @@ cache:
   - "$HOME/.ivy2"
 
 install:
-- sbt ++$TRAVIS_SCALA_VERSION clean compile test scalastyle
+- sbt ++$TRAVIS_SCALA_VERSION clean scalastyle compile test
 
 script:
 - sbt ++$TRAVIS_SCALA_VERSION package
