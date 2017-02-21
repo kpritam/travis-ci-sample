@@ -23,6 +23,8 @@ cache:
   - "$HOME/.sbt"
   - "$HOME/.ivy2"
 
+publishMavenStyle : true
+
 install:
 - sbt ++$TRAVIS_SCALA_VERSION clean scalastyle compile test
 
@@ -35,3 +37,4 @@ deploy:
     file: bintray.json
     user: $BINTRAY_USER
     key: $BINTRAY_API_KEY
+

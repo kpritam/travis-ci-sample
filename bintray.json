@@ -1,27 +1,27 @@
 {
   "package": {
-    "name": "package1",
-    "repo": "MyTrial",
-    "subject": "skvithalani",
+    "name": "tw-maven-central",
+    "repo": "tw",
+    "subject": "tw-tmt",
     "desc": "This is a private maven repo.",
-//    "website_url": "https://api.bintray.com/maven/",
-//    "issue_tracker_url": "https://github.com/kpritam/travis-ci-sample/issues",
-//    "vcs_url": "https://github.com/kpritam/travis-ci-sample.git",
-//    "github_use_tag_release_notes": true,
+    "website_url": "https://api.bintray.com/maven/",
+    "issue_tracker_url": "https://github.com/kpritam/travis-ci-sample/issues",
+    "vcs_url": "https://github.com/kpritam/travis-ci-sample.git",
+    "github_use_tag_release_notes": true,
     "licenses": ["Unlicense"],
     "public_download_numbers": false,
     "public_stats": false
   },
 
   "version": {
-    "name": "${project.organization}",
-    "vcs_tag": "{}",
+    "name": "location",
+    "vcs_tag": "tag",
     "released": "2017-02-18"
   },
 
   "files":
   [
-    {"includePattern": "csw-location/target/scala-2.12/(.*\\.jar)", "excludePattern": ".*/do-not-deploy/.*", "uploadPattern": ".2.0-SNAPSHOT/$1"}
+    {"includePattern": "csw-location/target/scala-2.12/(.*\\.jar)", "excludePattern": ".*/do-not-deploy/.*", "uploadPattern": ".3.0-SNAPSHOT/$1"}
   ],
 
   "publish": true
