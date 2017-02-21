@@ -32,5 +32,5 @@ deploy:
     provider: bintray
     skip_cleanup: true
     file: bintray.json
-    user: kpritam
+    user: $BINTRAY_USER
     key: $BINTRAY_API_KEY
