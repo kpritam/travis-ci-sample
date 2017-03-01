@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34f4769f-db48-444a-ace9-6c5b4cdd067c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="$PROJECT_DIR$/.travis.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/csw-location/src/test/scala/org/tmt/csw/location/HelloSpec.scala" afterPath="$PROJECT_DIR$/csw-location/src/test/scala/org/tmt/csw/location/HelloSpec.scala" />
     </list>
@@ -78,11 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HelloSpec.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HelloSpec.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/csw-location/src/test/scala/org/tmt/csw/location/HelloSpec.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state relative-caret-position="261">
+              <caret line="26" column="38" lean-forward="true" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
               <folding>
                 <element signature="e#30#62#0" expanded="true" />
               </folding>
@@ -142,11 +141,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="false">
+      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="208">
+              <caret line="13" column="34" lean-forward="false" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -188,8 +187,8 @@
         <option value="$PROJECT_DIR$/build.sbt" />
         <option value="$PROJECT_DIR$/a.sc" />
         <option value="$PROJECT_DIR$/csw-location/a.sc" />
-        <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/csw-location/src/test/scala/org/tmt/csw/location/HelloSpec.scala" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
   </component>
@@ -1063,14 +1062,11 @@
       <updated>1487597900405</updated>
       <workItem from="1487597933871" duration="31422000" />
       <workItem from="1487679745716" duration="3112000" />
-      <workItem from="1488370579968" duration="5888000" />
+      <workItem from="1488370579968" duration="6384000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HelloSpec_This_test_should_pass - 2017.03.01 at 18h 04m 44s.xml">
-      <configuration name="HelloSpec.This test should pass" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
     <history-entry file="HelloSpec_This_test_should_pass - 2017.03.01 at 18h 09m 16s.xml">
       <configuration name="HelloSpec.This test should pass" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
@@ -1098,9 +1094,12 @@
     <history-entry file="HelloSpec_This_test_should_pass - 2017.03.01 at 22h 07m 42s.xml">
       <configuration name="HelloSpec.This test should pass" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
+    <history-entry file="HelloSpec_This_test_should_pass - 2017.03.01 at 22h 15m 49s.xml">
+      <configuration name="HelloSpec.This test should pass" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40422000" />
+    <option name="totallyTimeSpent" value="40918000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1431,21 +1430,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/csw-location/src/test/scala/org/tmt/csw/location/HelloSpec.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="261">
+          <caret line="26" column="38" lean-forward="true" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
           <folding>
             <element signature="e#30#62#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="34" lean-forward="false" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>

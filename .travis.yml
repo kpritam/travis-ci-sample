@@ -3,31 +3,12 @@ language: scala
 scala: 2.12.1
 
 jdk: oraclejdk8
-#
-#notifications:
-#  email:
-#    recipients:
-#    - kpritam@thoughtworks.com
-#    - uvjoshi@thoughtworks.com
-#    on_success: never
-#    on_failure: always
-#
-#cache:
-#  directories:
-#  - "$HOME/.m2/repository"
-#  - "$HOME/.sbt"
-#  - "$HOME/.ivy2"
+
+cache:
+  directories:
+  - "$HOME/.m2/repository"
+  - "$HOME/.sbt"
+  - "$HOME/.ivy2"
 
 install:
 - sbt ++$TRAVIS_SCALA_VERSION test
-
-#
-#script:
-#- sbt ++$TRAVIS_SCALA_VERSION package
-#
-#deploy:
-#    provider: bintray
-#    skip_cleanup: true
-#    file: bintray.json
-#    user: $BINTRAY_USER
-#    key: $BINTRAY_API_KEY
