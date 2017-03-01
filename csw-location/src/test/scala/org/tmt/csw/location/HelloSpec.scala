@@ -14,7 +14,7 @@ class HelloSpec extends FlatSpec with Matchers {
   "This test" should "pass" in {
 
 
-    val service = ServiceInfo.create("_tmt._tcp.local.", "tmt3", 516, "")
+    val service = ServiceInfo.create("_tmt._tcp.local.", "tmt3", 80, "")
     val service1 = ServiceInfo.create("_tmt._tcp.local.", "tmt4", 527, "")
     val service2 = ServiceInfo.create("_html._tcp.local.", "apache-someuniqueid", 80, "")
 
