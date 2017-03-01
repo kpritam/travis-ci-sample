@@ -1,6 +1,7 @@
 package org.tmt.csw.location
 
 import java.net.NetworkInterface
+import java.util
 import javax.jmdns.{JmDNS, ServiceInfo}
 
 import org.scalatest._
@@ -11,19 +12,19 @@ class HelloSpec extends FlatSpec with Matchers {
   }
 
   "This test" should "pass" in {
-    val Port = 1234
 
-    val service : ServiceInfo = ServiceInfo.create("_tmt._tcp.local.", "tmt3", 516, "")
+
+    val service = ServiceInfo.create("_tmt._tcp.local.", "tmt3", 516, "")
     val service1 = ServiceInfo.create("_tmt._tcp.local.", "tmt4", 527, "")
+    val service2 = ServiceInfo.create("_html._tcp.local.", "apache-someuniqueid", 80, "")
 
+    val jmDNS = JmDNS.create()
 
-    val jmDNS = JmDNS.create();
-
-    jmDNS.registerService(service)
+      jmDNS.registerService(service2)
 
     jmDNS.registerService(service1)
 
-    jmDNS.getServiceInfo("_tmt._tcp.local.", "tmt3") should be (service)
+    jmDNS.getServiceInfo("_tmt._tcp.local.", "tmt3") should be (service2)
 
 //    jmDNS.list("_tmt._tcp.local.") should be (service)
   }
