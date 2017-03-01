@@ -2,6 +2,9 @@ language: scala
 
 scala: 2.12.1
 
+
+sudo : true
+
 jdk: oraclejdk8
 
 notifications:
