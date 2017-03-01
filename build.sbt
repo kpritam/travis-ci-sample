@@ -1,11 +1,14 @@
-import Dependencies.{scalatest, _}
+import Dependencies.{`scalatest`, `jmdns`}
 import Settings._
 import sbt.Keys.libraryDependencies
 
 lazy val `csw-location` = project
   .settings(commonSettings)
   .settings(
-    libraryDependencies += scalatest % Test
+    libraryDependencies ++= Seq(
+      `jmdns`,
+      `scalatest` % Test
+    )
   )
 
 resolvers += Resolver.bintrayRepo("kpritam", "tw")
