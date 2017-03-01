@@ -16,12 +16,12 @@ class HelloSpec extends FlatSpec with Matchers {
 
     val service = ServiceInfo.create("_tmt._tcp.local.", "tmt3", 524, "")
     val service1 = ServiceInfo.create("_tmt._tcp.local.", "tmt4", 527, "")
-    val service2 = ServiceInfo.create("_html._tcp.local.", "apache-someuniqueid", 80, "")
+//    val service2 = ServiceInfo.create("_html._tcp.local.", "apache-someuniqueid", 80, "")
 
     val jmDNS = JmDNS.create()
 
     jmDNS.registerService(service)
-      jmDNS.registerService(service2)
+//      jmDNS.registerService(service2)
 
     jmDNS.registerService(service1)
 
