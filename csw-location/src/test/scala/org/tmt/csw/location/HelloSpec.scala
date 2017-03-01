@@ -25,7 +25,7 @@ class HelloSpec extends FlatSpec with Matchers {
 
     jmDNS.registerService(service1)
 
-    jmDNS.getServiceInfo("_tmt._tcp.local.", "tmt3") should be (service)
+    jmDNS.getServiceInfo("_tmt._tcp.local.", "tmt3") should be (service1)
 
 //    jmDNS.list("_tmt._tcp.local.") should be (service)
   }
