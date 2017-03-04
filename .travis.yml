@@ -11,6 +11,7 @@ install:
 deploy:
   provider: pages
   skip_cleanup: true
+  github_token: $GITHUB_TOKEN
   local_dir: csw-location/target/test-reports
 env:
   global:
