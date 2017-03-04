@@ -9,13 +9,13 @@ cache:
 script:
 - sbt ++$TRAVIS_SCALA_VERSION ";test;coverageReport"
 after_success:
-  deploy:
     provider: pages
     skip_cleanup: true
     github_token: $GITHUB_TOKEN
     repo: "kpritam/WebdriverIO"
     local_dir: csw-location/target/test-reports
 after_faliure:
+  deploy:
     provider: pages
     skip_cleanup: true
     github_token: $GITHUB_TOKEN
