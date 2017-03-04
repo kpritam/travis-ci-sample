@@ -1,8 +1,13 @@
 package org.tmt.csw.location
 
 object Hello extends Greeting with App {
+  val x : Int = 15
+  val y : Int = 18
 
-  println("")
+  if (x < y){
+    println(s"x : $x")
+  }
+
 }
 
 trait Greeting {

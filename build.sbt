@@ -2,7 +2,12 @@ import Dependencies.{`scalatest`, `jmdns`}
 import Settings._
 import sbt.Keys.libraryDependencies
 
+lazy val csw = project
+  .in(file("."))
+  .aggregate(`csw-location`)
+
 lazy val `csw-location` = project
+  .enablePlugins(Coverage)
   .settings(commonSettings)
   .settings(
     libraryDependencies ++= Seq(
@@ -12,7 +17,3 @@ lazy val `csw-location` = project
   )
 
 resolvers += Resolver.bintrayRepo("kpritam", "tw")
-resolvers += Resolver.url(
-  "bintray-kpritam-tw",
-  url("https://tw-tmt.bintray.com/tw/"))(
-  Resolver.ivyStylePatterns)
