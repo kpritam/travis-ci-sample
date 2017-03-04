@@ -16,5 +16,5 @@ install:
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: "459e347731d67c7c1925c5864329aec050638579"
+  github_token: "5469b9c8e0e05ed841ba009648dd0ce14eeacadb"
   local_dir: "csw-location/target/test-reports"
