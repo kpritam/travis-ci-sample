@@ -6,14 +6,15 @@ cache:
   - "$HOME/.m2/repository"
   - "$HOME/.sbt"
   - "$HOME/.ivy2"
-install:
-- sbt ++$TRAVIS_SCALA_VERSION ";test;coverageReport"
 script:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  repo: "kpritam/WebdriverIO"
-  local_dir: csw-location/target/test-reports
+- sbt ++$TRAVIS_SCALA_VERSION ";test;coverageReport"
+after_script:
+  deploy:
+    provider: pages
+    skip_cleanup: true
+    github_token: $GITHUB_TOKEN
+    repo: "kpritam/WebdriverIO"
+    local_dir: csw-location/target/test-reports
 env:
   global:
     secure: Pe0YleOP9FejTG4/L3z+aATNeZEdJCYgV8TgwxUQ+Anr+844tHVDZ4sALzWkRyN8YAL+CXrcJf+09/thelt9bgnrkfgMasfnrmbXmA3ZmHMNLZJMPlDRDUT4CNCmhEjkfVSFb9DwlxXlwKIS4Y447fU4lladyoEZuE6qurD6VAxiU82OoFY68btdvYfjwiMwwovItDtGMk5KTYq3CeECHTuvbT1KoYFfh7X8lSq+hoDpJwTa+YvB8WO6JjPncVGrmuUsoEonT3hwZ3ZiDsz6NlQ+6r3Ef1oEeYdEj6n92fuyIAwOvn5+fth3iyxMl5IPOcWJhbsGr1tXuEaRQo3wpUqSP6Wu+WfJBG+c3YdvVpydT5LK7lK2Z4IRNEFyUKB1IBaA8DjPO4OFIRNT9TmSrXOVe7wBW6ph9sokq9dfaX0QfgXET6eUORfPthrVYQGTe2A3u7PZs7J6jpPXwQYOamR9XzIPo04jLQaDGxspSM/kmV1TtJGH0DF7qz00S8rh6Mqawht9GlEpfmCIx7CVAbV8gGfSewI4II3gTMHE+zNTawTwVFkk09WAw7+TUyOcsZU6SOgdqdaporp6ktNZlBOOdVh0j2RaBj4XkvMTbqpKgmiOcmoePb3YFR8spLvM0Pu3M3ypxnr+7lcfwRD8ZkxrMTFI05mBpTpjAkrHAeQ=
