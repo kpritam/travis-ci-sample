@@ -8,7 +8,7 @@ cache:
   - "$HOME/.ivy2"
 install:
 - sbt ++$TRAVIS_SCALA_VERSION ";test;coverageReport"
-deploy:
+script:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
