@@ -12,6 +12,7 @@ deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
+  repo: "https://github.com/kpritam/WebdriverIO.git"
   local_dir: csw-location/target/test-reports
 env:
   global:
