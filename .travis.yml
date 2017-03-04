@@ -11,4 +11,9 @@ cache:
   - "$HOME/.ivy2"
 
 install:
-- sbt ++$TRAVIS_SCALA_VERSION clean scalastyle compile test
+- sbt ++$TRAVIS_SCALA_VERSION ";test;coverageReport"
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  local_dir: "csw-location/target/test-reports"
