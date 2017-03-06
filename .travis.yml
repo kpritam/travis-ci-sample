@@ -16,7 +16,7 @@ cache:
 script:
     - docker ps --all
     - docker build -t centos-csw .
-    - docker run -v /home/travis/build/kpritam/travis-ci-sample/:/source centos-csw bash -c "cd /source; sbt clean test coverageReport""
+    - docker run -v /home/travis/build/kpritam/travis-ci-sample/:/source centos-csw bash -c "cd /source; sbt clean test coverageReport coverageAggregate coveralls"
     - docker ps -a
 
 #
