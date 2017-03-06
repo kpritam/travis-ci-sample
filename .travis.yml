@@ -14,6 +14,7 @@ cache:
   - "$HOME/.ivy2"
 
 script:
+    - sbt test
     - docker ps --all
     - docker build -t centos-csw .
     - docker run -v /home/travis/build/kpritam/travis-ci-sample/:/source centos-csw bash -c "cd /source; sbt clean test coverageReport coverageAggregate coveralls"
