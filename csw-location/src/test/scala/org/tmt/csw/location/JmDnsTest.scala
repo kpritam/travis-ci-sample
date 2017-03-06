@@ -19,7 +19,7 @@ class JmDnsTest extends FunSuite with Matchers {
     jmDNS.registerService(service)
     jmDNS.registerService(service1)
 
-    jmDNS.getServiceInfo("_tmt._tcp.local.", "tmt3") shouldEqual(ServiceInfo.create("_tmt._tcp.local.", "tmt4", 517, ""))
+    jmDNS.getServiceInfo("_tmt._tcp.local.", "tmt3") shouldEqual(ServiceInfo.create("_tmt._tcp.local.", "tmt3", 516, ""))
 
   }
 

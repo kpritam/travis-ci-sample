@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="34f4769f-db48-444a-ace9-6c5b4cdd067c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/csw-location/src/test/scala/org/tmt/csw/location/JmDnsTest.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="$PROJECT_DIR$/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/csw-location/src/test/scala/org/tmt/csw/location/JmDnsTest.scala" afterPath="$PROJECT_DIR$/csw-location/src/test/scala/org/tmt/csw/location/JmDnsTest.scala" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/csw-location/target/" />
@@ -76,11 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" column="6" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="115" />
+            <state relative-caret-position="418">
+              <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -106,11 +105,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JmDnsTest.scala" pinned="false" current-in-tab="false">
+      <file leaf-file-name="JmDnsTest.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/csw-location/src/test/scala/org/tmt/csw/location/JmDnsTest.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="462">
-              <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+              <caret line="21" column="120" lean-forward="false" selection-start-line="21" selection-start-column="120" selection-end-line="21" selection-end-column="120" />
               <folding>
                 <element signature="e#30#69#0" expanded="true" />
               </folding>
@@ -1182,7 +1181,7 @@
       <workItem from="1488606760743" duration="2762000" />
       <workItem from="1488613283541" duration="11398000" />
       <workItem from="1488654926408" duration="3382000" />
-      <workItem from="1488793086173" duration="2813000" />
+      <workItem from="1488793086173" duration="3461000" />
     </task>
     <servers />
   </component>
@@ -1219,7 +1218,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64000000" />
+    <option name="totallyTimeSpent" value="64648000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1617,21 +1616,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/csw-location/src/test/scala/org/tmt/csw/location/JmDnsTest.scala">
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-          <folding>
-            <element signature="e#30#69#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="418">
+          <caret line="19" column="18" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
+    <entry file="file://$PROJECT_DIR$/csw-location/src/test/scala/org/tmt/csw/location/JmDnsTest.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="6" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="115" />
-          <folding />
+        <state relative-caret-position="462">
+          <caret line="21" column="120" lean-forward="false" selection-start-line="21" selection-start-column="120" selection-end-line="21" selection-end-column="120" />
+          <folding>
+            <element signature="e#30#69#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
