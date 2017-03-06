@@ -15,10 +15,8 @@ cache:
 
 install:
     - docker build -t centos-csw .
-    - docker run -it --rm --name node1 -v /home/travis/build/tmtsoftware/csw-prod/:/source centos-csw bash
-    - node1
-    - cd /source
-    - sbt test
+    - docker run -v /home/travis/build/kpritam/travis-ci-sample/:/source centos-csw bash -c "cd /source; sbt test;"
+
 #
 #script:
 #  - sbt clean coverage test coverageReport
