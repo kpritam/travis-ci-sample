@@ -1,15 +1,29 @@
+sudo: required
+
 language: scala
 scala: 2.12.1
 jdk: oraclejdk8
+
+services:
+  - docker
+
 cache:
   directories:
   - "$HOME/.m2/repository"
   - "$HOME/.sbt"
   - "$HOME/.ivy2"
-script:
-  - sbt clean coverage test coverageReport
-  - sbt coverageAggregate
-  - sbt coveralls
+
+install:
+    - docker build -t centos-csw .
+    - docker run -it --rm --name node1 -v /home/travis/build/tmtsoftware/csw-prod/:/source centos-csw bash
+    - node1
+    - cd /source
+    - sbt test
+#
+#script:
+#  - sbt clean coverage test coverageReport
+#  - sbt coverageAggregate
+#  - sbt coveralls
 
 env:
   global:
