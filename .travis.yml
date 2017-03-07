@@ -14,11 +14,12 @@ cache:
   - "$HOME/.ivy2"
 
 script:
-    - sbt test
+    - sudo ip addr show docker0
     - docker ps --all
     - docker build -t centos-csw .
-    - docker run -v /home/travis/build/kpritam/travis-ci-sample/:/source centos-csw bash -c "cd /source; sbt clean test coverageReport coverageAggregate coveralls"
+    - docker run -v /home/travis/build/kpritam/travis-ci-sample/:/source centos-csw bash -c "cd /source; ip addr show eth0; route"
     - docker ps -a
+    - docker run --net=host -v /home/travis/build/kpritam/travis-ci-sample/:/source centos-csw bash -c "cd /source; ip addr show eth0; "
 
 #
 #script:
