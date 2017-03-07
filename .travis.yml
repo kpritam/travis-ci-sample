@@ -19,6 +19,7 @@ cache:
   - "$HOME/.ivy2"
 
 script:
+    - docker network ls
     - docker info
     - sudo brctl show
     - sudo ifconfig
