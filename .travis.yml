@@ -1,5 +1,8 @@
 sudo: required
 
+os:
+  osx
+
 language: scala
 scala: 2.12.1
 jdk: oraclejdk8
@@ -8,9 +11,8 @@ services:
   - docker
 
 before_install:
-  - sudo apt-get update
-  - sudo apt-get install docker
-  - sudo apt-get install docker-engine
+  - brew install docker
+  - brew install docker-engine
 
 cache:
   directories:
