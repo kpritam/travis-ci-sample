@@ -100,8 +100,8 @@
       <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" column="16" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+            <state relative-caret-position="550">
+              <caret line="25" column="38" lean-forward="false" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -1078,7 +1078,7 @@
       <workItem from="1488793086173" duration="9917000" />
       <workItem from="1488870055804" duration="49000" />
       <workItem from="1488870119239" duration="212000" />
-      <workItem from="1488870346891" duration="3334000" />
+      <workItem from="1488870346891" duration="3375000" />
     </task>
     <servers />
   </component>
@@ -1115,7 +1115,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74699000" />
+    <option name="totallyTimeSpent" value="74740000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1534,8 +1534,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="16" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+        <state relative-caret-position="550">
+          <caret line="25" column="38" lean-forward="false" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
           <folding />
         </state>
       </provider>

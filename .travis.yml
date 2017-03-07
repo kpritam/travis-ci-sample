@@ -23,7 +23,7 @@ script:
     - docker inspect --format='' node1
     - docker ps -a
     - docker run --network=host --name=node2 centos-csw bash -c "ifconfig"
-    - docker inspect --format='' node1
+    - docker inspect --format='' node2
     - docker network inspect ls
     - docker network inspect bridge
 
