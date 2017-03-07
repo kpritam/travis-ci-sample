@@ -14,12 +14,18 @@ cache:
   - "$HOME/.ivy2"
 
 script:
-    - sudo ip addr show docker0
-    - docker ps --all
+    - sudo ifconfig
+    - netstat -g
+    - docker network inspect ls
+    - docker network inspect bridge
     - docker build -t centos-csw .
-    - docker run -v /home/travis/build/kpritam/travis-ci-sample/:/source centos-csw bash -c "cd /source; ip addr show eth0; route"
+    - docker run --name=node1 centos-csw bash -c "ifconfig; route; netstat -g"
+    - docker inspect --format='' node1
     - docker ps -a
-    - docker run --net=host -v /home/travis/build/kpritam/travis-ci-sample/:/source centos-csw bash -c "cd /source; ip addr show eth0; "
+    - docker run --network=host --name=node2 centos-csw bash -c "ifconfig"
+    - docker inspect --format='' node1
+    - docker network inspect ls
+    - docker network inspect bridge
 
 #
 #script:
