@@ -19,6 +19,7 @@ cache:
 script:
     - sudo ifconfig
     - netstat -g
+    - ping all-systems.mcast.net
     - docker build -t centos-csw .
     - docker run --name=node1 centos-csw bash -c "ifconfig; sbt test; route; netstat -g"
     - docker ps -a
