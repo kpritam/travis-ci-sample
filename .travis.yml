@@ -6,9 +6,9 @@ jdk: oraclejdk8
 services:
   - docker
 
-before_install:
-  - brew install docker
-  - brew install docker-engine
+#before_install:
+#  - brew install docker
+#  - brew install docker-engine
 
 cache:
   directories:
