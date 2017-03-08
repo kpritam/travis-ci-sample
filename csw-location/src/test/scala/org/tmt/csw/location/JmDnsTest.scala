@@ -16,7 +16,7 @@ class JmDnsTest extends FunSuite with Matchers {
 
 
     Networks.getPrimaryIpv4Address shouldEqual("10.10.10.10")
-
+    
     val jmDNS = JmDNS.create(Networks.getPrimaryIpv4Address)
 
     jmDNS.registerService(service)

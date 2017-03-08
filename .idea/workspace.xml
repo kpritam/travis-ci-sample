@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="34f4769f-db48-444a-ace9-6c5b4cdd067c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="$PROJECT_DIR$/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/csw-location/src/test/scala/org/tmt/csw/location/ComponentIdTest.scala" afterPath="$PROJECT_DIR$/csw-location/src/test/scala/org/tmt/csw/location/ComponentIdTest.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/csw-location/src/test/scala/org/tmt/csw/location/HelloSpec.scala" afterPath="$PROJECT_DIR$/csw-location/src/test/scala/org/tmt/csw/location/HelloSpec.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/csw-location/src/test/scala/org/tmt/csw/location/JmDnsTest.scala" afterPath="$PROJECT_DIR$/csw-location/src/test/scala/org/tmt/csw/location/JmDnsTest.scala" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -98,11 +100,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="25" column="18" lean-forward="false" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+            <state relative-caret-position="-132">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -121,18 +123,18 @@
       <file leaf-file-name="ComponentIdTest.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/csw-location/src/test/scala/org/tmt/csw/location/ComponentIdTest.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="10" column="43" lean-forward="false" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+            <state relative-caret-position="220">
+              <caret line="10" column="45" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JmDnsTest.scala" pinned="false" current-in-tab="false">
+      <file leaf-file-name="JmDnsTest.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/csw-location/src/test/scala/org/tmt/csw/location/JmDnsTest.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" column="30" lean-forward="false" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+            <state relative-caret-position="396">
+              <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
               <folding>
                 <element signature="e#30#69#0" expanded="true" />
               </folding>
@@ -154,7 +156,7 @@
         <entry file="file://$PROJECT_DIR$/csw-location/src/test/scala/org/tmt/csw/location/HelloSpec.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="154">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <caret line="7" column="0" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="10" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -204,17 +206,17 @@
         <option value="$PROJECT_DIR$/csw-location/a.sc" />
         <option value="$PROJECT_DIR$/project/Dependencies.scala" />
         <option value="$PROJECT_DIR$/project/plugins.sbt" />
-        <option value="$PROJECT_DIR$/csw-location/src/test/scala/org/tmt/csw/location/HelloSpec.scala" />
         <option value="$PROJECT_DIR$/csw-location/src/main/scala/org/tmt/csw/location/Hello.scala" />
         <option value="$PROJECT_DIR$/csw-location/src/main/scala/org/tmt/csw/location/common/SourceExtensions.scala" />
         <option value="$PROJECT_DIR$/csw-location/src/main/scala/org/tmt/csw/location/Connection.scala" />
         <option value="$PROJECT_DIR$/csw-location/src/main/scala/org/tmt/csw/location/ComponentType.scala" />
-        <option value="$PROJECT_DIR$/csw-location/src/test/scala/org/tmt/csw/location/ComponentIdTest.scala" />
         <option value="$PROJECT_DIR$/.coveralls.yml" />
         <option value="$PROJECT_DIR$/build.sbt" />
         <option value="$PROJECT_DIR$/project/Coverage.scala" />
-        <option value="$PROJECT_DIR$/csw-location/src/test/scala/org/tmt/csw/location/JmDnsTest.scala" />
         <option value="$PROJECT_DIR$/.travis.yml" />
+        <option value="$PROJECT_DIR$/csw-location/src/test/scala/org/tmt/csw/location/ComponentIdTest.scala" />
+        <option value="$PROJECT_DIR$/csw-location/src/test/scala/org/tmt/csw/location/HelloSpec.scala" />
+        <option value="$PROJECT_DIR$/csw-location/src/test/scala/org/tmt/csw/location/JmDnsTest.scala" />
       </list>
     </option>
   </component>
@@ -252,6 +254,16 @@
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="csw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="csw" />
@@ -1123,7 +1135,7 @@
       <workItem from="1488793086173" duration="9917000" />
       <workItem from="1488870055804" duration="49000" />
       <workItem from="1488870119239" duration="212000" />
-      <workItem from="1488870346891" duration="9734000" />
+      <workItem from="1488870346891" duration="9865000" />
     </task>
     <servers />
   </component>
@@ -1160,7 +1172,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81099000" />
+    <option name="totallyTimeSpent" value="81230000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1541,22 +1553,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/csw-location/src/test/scala/org/tmt/csw/location/ComponentIdTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="10" column="43" lean-forward="false" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/csw-location/src/test/scala/org/tmt/csw/location/HelloSpec.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/csw-location/src/main/scala/org/tmt/csw/location/common/Networks.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -1565,21 +1561,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/csw-location/src/test/scala/org/tmt/csw/location/JmDnsTest.scala">
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="30" lean-forward="false" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-          <folding>
-            <element signature="e#30#69#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-132">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
+    <entry file="file://$PROJECT_DIR$/csw-location/src/test/scala/org/tmt/csw/location/ComponentIdTest.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="25" column="18" lean-forward="false" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+        <state relative-caret-position="220">
+          <caret line="10" column="45" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csw-location/src/test/scala/org/tmt/csw/location/HelloSpec.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="10" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csw-location/src/test/scala/org/tmt/csw/location/JmDnsTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+          <folding>
+            <element signature="e#30#69#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
