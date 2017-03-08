@@ -14,6 +14,9 @@ class JmDnsTest extends FunSuite with Matchers {
     val service = ServiceInfo.create("_tmt._tcp.local.", "tmt3", 516, "")
     val service1 = ServiceInfo.create("_tmt._tcp.local.", "tmt4", 517, "")
 
+
+    Networks.getPrimaryIpv4Address shouldEqual("10.10.10.10")
+
     val jmDNS = JmDNS.create(Networks.getPrimaryIpv4Address)
 
     jmDNS.registerService(service)

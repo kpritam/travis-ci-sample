@@ -19,23 +19,11 @@ cache:
   - "$HOME/.ivy2"
 
 script:
-    - docker network ls
-    - docker info
-    - sudo brctl show
     - sudo ifconfig
     - netstat -g
-    - docker network inspect ls
-    - docker network inspect bridge
     - docker build -t centos-csw .
-    - docker run -e no_proxy="*.local, 169.254/16" --name=node1 centos-csw bash -c "ifconfig; route; netstat -g"
-    - sudo brctl show
-    - docker inspect --format='' node1
+    - docker run --name=node1 centos-csw bash -c "ifconfig; sbt test; route; netstat -g"
     - docker ps -a
-    - docker run --network=host --name=node2 centos-csw bash -c "ifconfig"
-    - sudo brctl show
-    - docker inspect --format='' node2
-    - docker network inspect ls
-    - docker network inspect bridge
 
 #
 #script:
