@@ -16,5 +16,10 @@ node {
             sh "echo 'step1'"
             sh "echo 'step1'"
             sh "echo 'step1'"
-        }
+    }
+    stage('Stage 3') { // for display purposes
+                sh "echo 'step1'"
+                sh "echo 'step1'"
+                sh "echo 'step1'"
+            }
 }
