@@ -1,23 +1,20 @@
 #!groovy
+node {
+    def SBT = "/usr/bin/sbt -Dsbt.log.noformat=true"
 
-pipeline {
-    agent any
-    stage('Cleanup') {
-        sh "sbt clean compile"
-      }
-
-    stage('Test') {
-        sh "sbt test"
+    stage('Test') { // for display purposes
+        sh "echo 'step1'"
+        sh "echo 'step1'"
+        sh "echo 'step1'"
     }
-
-    stage('Publish-Local') {
-        sh "sbt publish-local"
+    stage('Stage 1') { // for display purposes
+        sh "echo 'step1'"
+        sh "echo 'step1'"
+        sh "echo 'step1'"
     }
-
-    post {
-        always {
-            echo 'Execution completed.'
+    stage('Stage 2') { // for display purposes
+            sh "echo 'step1'"
+            sh "echo 'step1'"
+            sh "echo 'step1'"
         }
-    }
-
 }
