@@ -5,7 +5,7 @@ node {
     stage('Test') { // for display purposes
         sh "echo 'step1'"
         sh "echo 'step1'"
-        sh "echo 'step1'"
+        sh "echo 'step2'"
     }
     stage('Stage 1') { // for display purposes
         sh "echo 'step1'"
