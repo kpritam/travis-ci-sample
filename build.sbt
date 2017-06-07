@@ -13,7 +13,7 @@ lazy val `csw-location` = project
     libraryDependencies ++= Seq(
       `jmdns`,
       `scalatest` % Test
-    )`
+    )
   )
 
 resolvers += Resolver.bintrayRepo("kpritam", "tw")

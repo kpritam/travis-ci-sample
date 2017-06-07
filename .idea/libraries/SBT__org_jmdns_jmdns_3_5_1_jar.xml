@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="SBT: org.jmdns:jmdns:3.5.1:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.jmdns/jmdns/jars/jmdns-3.5.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.jmdns/jmdns/srcs/jmdns-3.5.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -2,10 +2,10 @@
   "generator-openapi-repo": {
     "importExistingSpec": true,
     "importedSpec": "swagger.yml",
-    "name": "CSW",
+    "name": "n",
     "repo": "kpritam/travis-ci-sample",
     "splitSpec": false,
     "samples": false,
-    "installSwaggerUI": true
+    "installSwaggerUI": false
   }
 }

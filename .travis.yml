@@ -1,35 +1,15 @@
-sudo: required
-language: scala
-scala: 2.12.1
-jdk: oraclejdk8
-
-services:
-  - docker
-
-#before_install:
-#  - brew install docker
-#  - brew install docker-engine
-
-cache:
-  directories:
-  - "$HOME/.m2/repository"
-  - "$HOME/.sbt"
-  - "$HOME/.ivy2"
-
-script:
-    - sudo ifconfig
-    - netstat -g
-    - ping all-systems.mcast.net
-    - docker build -t centos-csw .
-    - docker run --name=node1 centos-csw bash -c "ifconfig; sbt test; route; netstat -g"
-    - docker ps -a
-
-#
-#script:
-#  - sbt clean coverage test coverageReport
-#  - sbt coverageAggregate
-#  - sbt coveralls
-
-env:
-  global:
-    secure: Pe0YleOP9FejTG4/L3z+aATNeZEdJCYgV8TgwxUQ+Anr+844tHVDZ4sALzWkRyN8YAL+CXrcJf+09/thelt9bgnrkfgMasfnrmbXmA3ZmHMNLZJMPlDRDUT4CNCmhEjkfVSFb9DwlxXlwKIS4Y447fU4lladyoEZuE6qurD6VAxiU82OoFY68btdvYfjwiMwwovItDtGMk5KTYq3CeECHTuvbT1KoYFfh7X8lSq+hoDpJwTa+YvB8WO6JjPncVGrmuUsoEonT3hwZ3ZiDsz6NlQ+6r3Ef1oEeYdEj6n92fuyIAwOvn5+fth3iyxMl5IPOcWJhbsGr1tXuEaRQo3wpUqSP6Wu+WfJBG+c3YdvVpydT5LK7lK2Z4IRNEFyUKB1IBaA8DjPO4OFIRNT9TmSrXOVe7wBW6ph9sokq9dfaX0QfgXET6eUORfPthrVYQGTe2A3u7PZs7J6jpPXwQYOamR9XzIPo04jLQaDGxspSM/kmV1TtJGH0DF7qz00S8rh6Mqawht9GlEpfmCIx7CVAbV8gGfSewI4II3gTMHE+zNTawTwVFkk09WAw7+TUyOcsZU6SOgdqdaporp6ktNZlBOOdVh0j2RaBj4XkvMTbqpKgmiOcmoePb3YFR8spLvM0Pu3M3ypxnr+7lcfwRD8ZkxrMTFI05mBpTpjAkrHAeQ=
+language: node_js
+node_js:
+  - "node"
+deploy:
+  - skip_cleanup: true
+    provider: script
+    script: npm run deploy
+    on:
+      branch: master
+  - skip_cleanup: true
+    provider: script
+    script: npm run deploy-branch
+    on:
+      all_branches: true
+      condition: '"$TRAVIS_BRANCH" != "master" && "$TRAVIS_BRANCH" != "gh-pages"'

@@ -1,0 +1,10 @@
+[0m[[0minfo[0m] [0mAggregating coverage from subprojects...[0m
+[0m[[0minfo[0m] [0mGenerating scoverage reports...[0m
+[0m[[0minfo[0m] [0mWritten Cobertura report [/Users/pritamkadam/TMT/travis-ci-sample/target/scala-2.10/coverage-report/cobertura.xml][0m
+[0m[[0minfo[0m] [0mWritten XML coverage report [/Users/pritamkadam/TMT/travis-ci-sample/target/scala-2.10/scoverage-report/scoverage.xml][0m
+[0m[[0minfo[0m] [0mWritten HTML coverage report [/Users/pritamkadam/TMT/travis-ci-sample/target/scala-2.10/scoverage-report/index.html][0m
+[0m[[0minfo[0m] [0mStatement coverage.: 15.09%[0m
+[0m[[0minfo[0m] [0mBranch coverage....: 0.00%[0m
+[0m[[0minfo[0m] [0mCoverage reports completed[0m
+[0m[[0minfo[0m] [0mAggregation complete. Coverage was [15.09][0m
+[0m[[0minfo[0m] [0mAll done. Coverage was [15.09%][0m

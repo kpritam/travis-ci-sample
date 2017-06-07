@@ -1,0 +1,199 @@
+<?xml version="1.0"?>
+<!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
+<coverage 
+line-rate="0.15" lines-valid="53" lines-covered="8" branches-valid="2" branches-covered="0" branch-rate="0.00" complexity="0" version="1.0" timestamp="1488654597021">
+    <sources>
+        <source>--source</source>
+        <source>/Users/pritamkadam/TMT/travis-ci-sample/csw-location/src/main/scala</source>
+    </sources>
+    <packages>
+        <package name="org.tmt.csw.location" line-rate="0.24" branch-rate="0.00" complexity="0">
+            <classes>
+                <class 
+                name="org.tmt.csw.location.Hello" filename="org/tmt/csw/location/Hello.scala" line-rate="0.00" branch-rate="0.00" complexity="0">
+                    <methods>
+                        <method 
+                        name="org.tmt.csw.location/Hello/&lt;none&gt;" signature="()V" line-rate="0.00" branch-rate="0.00" complexity="0">
+                            <lines>
+                                <line number="8" hits="0" branch="false"/>
+                                <line number="8" hits="0" branch="false"/>
+                                <line number="8" hits="0" branch="false"/>
+                                <line number="7" hits="0" branch="false"/>
+                                <line number="7" hits="0" branch="false"/>
+                                <line number="8" hits="0" branch="false"/>
+                                <line number="8" hits="0" branch="false"/>
+                                <line number="8" hits="0" branch="false"/>
+                                <line number="7" hits="0" branch="false"/>
+                                <line number="4" hits="0" branch="false"/>
+                                <line number="5" hits="0" branch="false"/>
+                                <line number="7" hits="0" branch="false"/>
+                            </lines>
+</method>
+                    </methods>
+                    <lines>
+                        <line number="8" hits="0" branch="false"/>
+                        <line number="8" hits="0" branch="false"/>
+                        <line number="8" hits="0" branch="false"/>
+                        <line number="7" hits="0" branch="false"/>
+                        <line number="7" hits="0" branch="false"/>
+                        <line number="8" hits="0" branch="false"/>
+                        <line number="8" hits="0" branch="false"/>
+                        <line number="8" hits="0" branch="false"/>
+                        <line number="7" hits="0" branch="false"/>
+                        <line number="4" hits="0" branch="false"/>
+                        <line number="5" hits="0" branch="false"/>
+                        <line number="7" hits="0" branch="false"/>
+                    </lines>
+</class>
+                <class 
+                name="org.tmt.csw.location.ComponentId" filename="org/tmt/csw/location/ComponentId.scala" line-rate="0.45" branch-rate="1.00" complexity="0">
+                    <methods>
+                        <method 
+                        name="org.tmt.csw.location/ComponentId/toString" signature="()V" line-rate="0.00" branch-rate="0.00" complexity="0">
+                            <lines>
+                                <line number="12" hits="0" branch="false"/>
+                                <line number="12" hits="0" branch="false"/>
+                                <line number="12" hits="0" branch="false"/>
+                                <line number="12" hits="0" branch="false"/>
+                                <line number="12" hits="0" branch="false"/>
+                                <line number="12" hits="0" branch="false"/>
+                            </lines>
+</method>
+                        <method 
+                        name="org.tmt.csw.location/ComponentId/parse" signature="()V" line-rate="1.00" branch-rate="1.00" complexity="0">
+                            <lines>
+                                <line number="20" hits="1" branch="false"/>
+                                <line number="21" hits="1" branch="false"/>
+                                <line number="21" hits="1" branch="false"/>
+                                <line number="20" hits="1" branch="false"/>
+                                <line number="21" hits="1" branch="false"/>
+                            </lines>
+</method>
+                    </methods>
+                    <lines>
+                        <line number="12" hits="0" branch="false"/>
+                        <line number="20" hits="1" branch="false"/>
+                        <line number="12" hits="0" branch="false"/>
+                        <line number="12" hits="0" branch="false"/>
+                        <line number="21" hits="1" branch="false"/>
+                        <line number="12" hits="0" branch="false"/>
+                        <line number="12" hits="0" branch="false"/>
+                        <line number="21" hits="1" branch="false"/>
+                        <line number="20" hits="1" branch="false"/>
+                        <line number="21" hits="1" branch="false"/>
+                        <line number="12" hits="0" branch="false"/>
+                    </lines>
+</class>
+                <class 
+                name="org.tmt.csw.location.ComponentType" filename="org/tmt/csw/location/ComponentType.scala" line-rate="0.27" branch-rate="1.00" complexity="0">
+                    <methods>
+                        <method 
+                        name="org.tmt.csw.location/ComponentType/parse" signature="()V" line-rate="0.27" branch-rate="1.00" complexity="0">
+                            <lines>
+                                <line number="39" hits="1" branch="false"/>
+                                <line number="40" hits="0" branch="false"/>
+                                <line number="43" hits="0" branch="false"/>
+                                <line number="41" hits="0" branch="false"/>
+                                <line number="42" hits="1" branch="false"/>
+                                <line number="40" hits="0" branch="false"/>
+                                <line number="44" hits="0" branch="false"/>
+                                <line number="44" hits="0" branch="false"/>
+                                <line number="41" hits="0" branch="false"/>
+                                <line number="43" hits="0" branch="false"/>
+                                <line number="42" hits="1" branch="false"/>
+                            </lines>
+</method>
+                    </methods>
+                    <lines>
+                        <line number="39" hits="1" branch="false"/>
+                        <line number="40" hits="0" branch="false"/>
+                        <line number="43" hits="0" branch="false"/>
+                        <line number="41" hits="0" branch="false"/>
+                        <line number="42" hits="1" branch="false"/>
+                        <line number="40" hits="0" branch="false"/>
+                        <line number="44" hits="0" branch="false"/>
+                        <line number="44" hits="0" branch="false"/>
+                        <line number="41" hits="0" branch="false"/>
+                        <line number="43" hits="0" branch="false"/>
+                        <line number="42" hits="1" branch="false"/>
+                    </lines>
+</class>
+            </classes>
+        </package>
+        <package name="org.tmt.csw.location.common" line-rate="0.00" branch-rate="0.00" complexity="0">
+            <classes>
+                <class 
+                name="org.tmt.csw.location.common.Networks.Pair" filename="org/tmt/csw/location/common/Networks.scala" line-rate="0.00" branch-rate="0.00" complexity="0">
+                    <methods>
+                        <method 
+                        name="org.tmt.csw.location.common/Pair/isIpv4" signature="()V" line-rate="0.00" branch-rate="0.00" complexity="0">
+                            <lines>
+                                <line number="18" hits="0" branch="false"/>
+                                <line number="18" hits="0" branch="false"/>
+                            </lines>
+</method>
+                        <method 
+                        name="org.tmt.csw.location.common/Pair/default" signature="()V" line-rate="0.00" branch-rate="0.00" complexity="0">
+                            <lines>
+                                <line number="29" hits="0" branch="false"/>
+                                <line number="29" hits="0" branch="false"/>
+                                <line number="29" hits="0" branch="false"/>
+                            </lines>
+</method>
+                        <method name="org.tmt.csw.location.common/Pair/all" signature="()V" line-rate="0.00" branch-rate="0.00" complexity="0">
+                            <lines>
+                                <line number="27" hits="0" branch="false"/>
+                                <line number="24" hits="0" branch="false"/>
+                                <line number="26" hits="0" branch="false"/>
+                                <line number="27" hits="0" branch="false"/>
+                                <line number="25" hits="0" branch="false"/>
+                                <line number="24" hits="0" branch="false"/>
+                                <line number="25" hits="0" branch="false"/>
+                                <line number="26" hits="0" branch="false"/>
+                                <line number="24" hits="0" branch="false"/>
+                            </lines>
+                        </method>
+                    </methods>
+                    <lines>
+                        <line number="18" hits="0" branch="false"/>
+                        <line number="27" hits="0" branch="false"/>
+                        <line number="29" hits="0" branch="false"/>
+                        <line number="24" hits="0" branch="false"/>
+                        <line number="26" hits="0" branch="false"/>
+                        <line number="27" hits="0" branch="false"/>
+                        <line number="25" hits="0" branch="false"/>
+                        <line number="29" hits="0" branch="false"/>
+                        <line number="24" hits="0" branch="false"/>
+                        <line number="25" hits="0" branch="false"/>
+                        <line number="26" hits="0" branch="false"/>
+                        <line number="24" hits="0" branch="false"/>
+                        <line number="18" hits="0" branch="false"/>
+                        <line number="29" hits="0" branch="false"/>
+                    </lines>
+</class>
+                <class 
+                name="org.tmt.csw.location.common.Networks" filename="org/tmt/csw/location/common/Networks.scala" line-rate="0.00" branch-rate="0.00" complexity="0">
+                    <methods>
+                        <method 
+                        name="org.tmt.csw.location.common/Networks/getPrimaryIpv4Address" signature="()V" line-rate="0.00" branch-rate="0.00" complexity="0">
+                            <lines>
+                                <line number="11" hits="0" branch="false"/>
+                                <line number="12" hits="0" branch="false"/>
+                                <line number="13" hits="0" branch="false"/>
+                                <line number="10" hits="0" branch="false"/>
+                                <line number="10" hits="0" branch="false"/>
+                            </lines>
+</method>
+                    </methods>
+                    <lines>
+                        <line number="11" hits="0" branch="false"/>
+                        <line number="12" hits="0" branch="false"/>
+                        <line number="13" hits="0" branch="false"/>
+                        <line number="10" hits="0" branch="false"/>
+                        <line number="10" hits="0" branch="false"/>
+                    </lines>
+</class>
+            </classes>
+        </package>
+    </packages>
+</coverage>
